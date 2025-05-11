@@ -1,0 +1,64 @@
+/* Estilos globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Transições suaves */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Estilo para cards de empresas */
+.empresa-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.empresa-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para ícones de avaliação */
+.avaliacao i {
+    margin-right: 2px;
+}
+
+/* Responsividade para o mapa */
+#map {
+    min-height: 300px;
+}
+
+@media (min-width: 768px) {
+    #map {
+        min-height: 400px;
+    }
+}
+
+/* Estilo para o menu mobile (será implementado com JS) */
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+/* Efeito de hover para botões */
+.btn-hover:hover {
+    filter: brightness(90%);
+}
+
+/* Estilo para o rodapé */
+footer a:hover {
+    color: #93c5fd;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
